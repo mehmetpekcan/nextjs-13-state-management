@@ -1,0 +1,45 @@
+/*
+Don't use global CSS in production
+This is just for demo purposes to make the app easy.
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr min(768px, 96%) 1fr;
+}
+
+body > * {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  grid-column: 2;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.products-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.product {
+  border: 1px dashed #ccc;
+  padding: 8px;
+}
+
+.product-title {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
