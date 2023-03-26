@@ -1,4 +1,3 @@
-// import { useStore } from "@/stores";
 import { AddBasketButton } from "@/components/add-basket-button";
 import Link from "next/link";
 import { store } from "@/stores";
