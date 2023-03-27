@@ -1,9 +1,7 @@
 import { AddBasketButton } from "@/components/add-basket-button";
-import { useStore } from "@/stores";
 
 export default async function ProductDetailPage({ params: { id } }) {
-  const { getProduct } = useStore.getState();
-  const product = await getProduct(id);
+  const product = {};
 
   return (
     <div>

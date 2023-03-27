@@ -1,10 +1,8 @@
 import { AddBasketButton } from "@/components/add-basket-button";
 import Link from "next/link";
-import { store } from "@/stores";
-import { getProducts } from "@/stores/products-store";
 
 export default async function HomePage() {
-  const { payload: products } = await store.dispatch(getProducts());
+  const products = [];
 
   if (!products.length) {
     return <h1>No products</h1>;

@@ -10,8 +10,21 @@ This is just for demo purposes to make the app easy.
 }
 
 body {
+  background-color: #191919;
   display: grid;
   grid-template-columns: 1fr min(768px, 96%) 1fr;
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div {
+  color: #fafafa;
 }
 
 body > * {
